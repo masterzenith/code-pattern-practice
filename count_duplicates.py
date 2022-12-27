@@ -7,3 +7,11 @@ def countDupes(root, prev):
         duplicates += 1
     duplicates += countDupes(root.right, root)
     return duplicates
+
+
+def main():
+    print(countDupes(2, 1))
+
+
+if __name__ == "__main__":
+    main()
